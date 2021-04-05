@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Bernardo Bahia Monteiro"
 title_separator          : "-"
 name                     : &name "Bernardo Bahia Monteiro"
-description              : &description "Aerospace Engineer. PhD student at the University of Michigan. Working on control of flexible aircraft."
+description              : &description "Aerospace Engineering PhD canditate at the University of Michigan"
 url                      : https://bbahiam.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bbahiam/bbahiam.github.io"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Bernardo Bahia Monteiro"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Aerospace Engineer. PhD candidate at the University of Michigan. Working on control of flexible aircraft."
   location         : "Ann Arbor"
   employer         : "University of Michigan"
   pubmed           : 
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    :
   email            : "bbahia@umich.edu"
   researchgate     : 
   uri              :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/bbahia/"
   orcid            : "https://orcid.org/0000-0002-8501-2056"
   pinterest        :
   soundcloud       :
