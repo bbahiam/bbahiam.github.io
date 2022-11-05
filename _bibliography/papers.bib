@@ -3,6 +3,114 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{BahiaMonteiro2022,
+    abbr={IFASD},
+    bibtex_show={true},
+    selected={true},
+    pdf={IFASD-2022-036.pdf},
+    author = {Bahia Monteiro, Bernardo and Cesnik, Carlos and Kolmanovsky, Ilya},
+    year = {2022},
+    month = {06},
+    booktitle ={International Forum on Aeroelasticity and Structural Dynamics},
+    city = {Madrid},
+    title = {Gust Load Alleviation Control Related Metric for Multidisciplinary Design Optimization},
+    abstract = {This paper presents a new approach for considering gust load
+                alleviation (GLA) in the multi- disciplinary design
+                optimization (MDO) process. Closed-loop control considerations
+                are incorporated into the MDO problem through the inclusion
+                of the parameterization of the aircraft’s sensitivity function
+                to stress. The parameters of such function are included as
+                design variables and a constraint on its Bode integral relation
+                is imposed. This approach is control agnostic in the sense that
+                it does not explicitly design the controller or its gains,
+                which can be relegated to a later design phase. It consists in
+                the addition of two constraints to the MDO problem: one for
+                peak gust stress, based on the design envelope criterion, and
+                the other for fatigue life.  While the GLA feedback controller
+                does not need to be designed, the optimizer designs the
+                closed-loop sensitivity function directly. An additional
+                constraint on the Bode integral relation is used to ensure that
+                the bandwidth of the system is bounded by the current
+                technological limit, while the parameterization of the
+                sensitivity function is chosen to guarantee robustness of the
+                closed-loop system. Finally, the use of this new approach is be
+                demonstrated by performing multidisciplinary design
+                optimization of a flexible free-flying aircraft model subjected
+                to gust loads.} 
+}
+
+
+@inproceedings{Jonsson2022a,
+  abbr={SciTech},
+  bibtex_show={true},
+  selected={true},
+  html={https://doi.org/10.2514/6.2022-2092},
+  pdf={Jonsson2022a.pdf},
+  author = {Jonsson, Eirikur and Riso, Cristina and Bahia Monteiro, Bernardo and Gray, Alasdair C. and Martins, Joaquim R. R. A. and Cesnik, Carlos E. S.},
+  booktitle = {AIAA SciTech Forum},
+  doi = {10.2514/6.2022-2092},
+  month = jan,
+  title = {High-Fidelity Gradient-Based Wing Structural Optimization Including a Geometrically Nonlinear Flutter Constraint},
+  year = {2022},
+  abstract = {Higher-aspect-ratio lightweight wings can make aircraft more
+              energy efficient thanks to induced drag reduction. Because such
+              wings exhibit large deflections, affecting the flutter onset,
+              design optimization using linear flutter analysis is inadequate.
+              To address this issue, we develop a framework for including a
+              geometrically nonlinear flutter constraint into high-fidelity,
+              gradient-based wing structural optimization. The framework
+              evaluates the objective function (mass) and the stress and
+              adjacency constraints in a built-up finite element model to
+              capture the structural details of realistic wings. This built-up
+              finite element model is reduced to a low-order beam
+              representation to make geometrically nonlinear flutter analysis
+              tractable for optimization. The geometrically nonlinear flutter
+              analysis considers the wing deformed shape at each flight
+              condition and aggregates the associated damping values into a
+              scalar flutter constraint. The flutter constraint is
+              differentiated with respect to the built-up structural sizing
+              variables using the adjoint method to enable large-scale
+              optimizations. The framework is demonstrated by minimizing the
+              mass of a high-aspect-ratio wingbox subject to the geometrically
+              nonlinear flutter constraint along with stress and adjacency
+              constraints. The geometrically nonlinear flutter constraint
+              introduces a mass penalty up to about 60\% of the baseline mass
+              compared with the 10\% mass penalty by a linear flutter constraint
+              based on the wing undeformed shape. This methodology can help
+              design new-generation energy-efficient aircraft with
+              high-aspect-ratio wings that require considering geometrically
+              nonlinear effects early in the design cycle to prevent flutter.}
+}
+
+@thesis{BahiaMonteiro2019,
+    abbr={undergrad thesis},
+    bibtex_show=true,
+    pdf={BahiaMonteiro2019.pdf},
+    author={Bahia Monteiro, Bernardo},
+    year={2019},
+    title={Simulation of Gas Turbine Engines},
+    city={Belo Horizonte},
+    school={Universidade Federal de Minas Gerais},
+    abstract={The simulation of gas turbine engines is of vital importance to
+              their design process and to the design of their control systems.
+              In order to capture behaviour not shown by a simple thermodynamic
+              cycle model, such as transients, unchoked turbine inlet, and
+              instabilities, as well as to increase the model fidelity, it is
+              necessary to develop a component based engine model. This work
+              develops such engine model for the simple case of a single spool
+              turbojet, with a single stage centrifugal compressor and single
+              stage axial turbine. This configuration is typical of very small
+              gas turbines. No experimental data is need as input to the model.
+              It is based on first principles and semi-empirical corrections
+              available in the literature. This work contains nonlinear models
+              for a centrifugal compressor, axial turbine, nozzle, and the
+              engine operating statically and dynamically. Surge is considered.
+              The models are applied for the Jet Munts VT-80 engine and the
+              results are compared with experimental data.}
+}
+
+
+
 @book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
@@ -43,7 +151,6 @@
   html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
   pdf={example_pdf.pdf},
   altmetric={248277},
-  selected={true}
 }
 
 @article{einstein1905molekularkinetischen,
