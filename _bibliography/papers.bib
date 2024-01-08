@@ -1,7 +1,93 @@
 ---
 ---
+@inproceedings{BahiaMonteiro2024,
+  abbr={SciTech},
+  bibtex_show={true},
+  pdf={BahiaMonteiro2024.pdf},
+  selected=True,
+  author = {Bahia Monteiro, Bernardo and Kolmanovsky, Ilya and Cesnik, Carlos E. S.},
+  booktitle = {AIAA SCITECH Forum},
+  month = jan,
+  title = {Controller Agnostic Design Metrics for Stochastic Disturbance Rejection},
+  year = {2024},
+  abstract = {This paper presents a framework to compute the probabilities and
+              the expected frequencies of exceedance of design limits by the
+              outputs and inputs of a linear system driven by Gaussian noise.
+              It is assumed that the system has a second input that can be used
+              for feedback control based on the measurements of one of the
+              outputs. This approach is able to capture the effects of the
+              controller by assuming a shape for the loop sensitivity function,
+              which must respect the Bode integral relation.  For illustration,
+              a surrogate model of a supersonic aircraft configuration in the
+              approach-to-land flight phase is considered, and the
+              probabilities and expected frequencies of exceedance of design
+              limits of angle of attack, glideslope deviation, elevator
+              deflection, and elevator deflection rate are calculated.  To
+              enable fast and accurate derivative computation for
+              gradient-based optimization, frequently used in large-scale
+              multidisciplinary design optimization (MDO), the derivatives of
+              these quantities with respect to design parameters are derived
+              analytically.  They are verified against a finite difference
+              approximation with excellent agreement.  A simple optimization
+              problem for designing the sensitivity function is considered and
+              the resulting closed-loop system is analyzed.},
+}
 
-@string{aps = {American Physical Society,}}
+@InProceedings{BahiaMonteiro2023a,
+abbr={RAeS},
+bibtex_show={true},
+selected=True,
+pdf={BahiaMonteiro2023a.pdf},
+  author    = {Bahia Monteiro, Bernardo and Cesnik, Carlos E. S. and Kolmanovsky, Ilya},
+  booktitle = {Royal Aeronautical Society’s 8th Aircraft Structural Design Conference},
+  title     = {Gust Load Metrics for Multidisciplinary Design Optimization Considering Fatigue and Active Control},
+  year      = {2023},
+   month = oct,
+   abstract={This paper presents a new approach for incorporate gust load
+             alleviation (GLA) in the multidisciplinary design optimization
+             (MDO) process.  With this approach, closed-loop control
+             considerations are incorporated into the MDO problem formulation
+             through the inclusion of the parameterization of the sensitivity
+             to stress transfer function of the aircraft.  The parameters of
+             this function are included as design variables and a constraint
+             based on the Bode integral relation is imposed on it.  This
+             approach is control agnostic in the sense that it does not
+             explicitly design a controller or its gains, which can be
+             relegated to a later design phase.  Two constraints related to the
+             gust loads are added to the MDO problem: one for peak gust stress,
+             based on the design envelope criterion, and the other for fatigue
+             life under continuous turbulence. While the GLA feedback
+             controller does not need to be designed, the optimizer designs the
+             closed-loop sensitivity function directly. The parameterization of
+             the sensitivity function is chosen to guarantee robustness of the
+             closed-loop system. The use of this new approach is  demonstrated
+             by performing multidisciplinary design optimization of a flexible
+             free-flying aircraft model subjected to gust loads. The
+             matrix-free adjoint derivatives are verified against finite
+             differences, and the optimum designs with and without control
+             considerations are compared. The use of the proposed approach was
+             able to reduce the optimal wing mass for the closed-loop design in
+             relation to the open-loop design while still satisfying the other
+             constraints. },
+}
+
+@article{Jonsson2023,
+    abbr={AIAA Journal},
+    bibtex_show={true},
+    selected={false},
+    doi={10.2514/1.J061575},
+  title={High-Fidelity Gradient-Based Wing Structural Optimization Including Geometrically Nonlinear Flutter Constraint},
+  author={Jonsson, Eirikur and Riso, Cristina and Monteiro, Bernardo Bahia and Gray, Alasdair C and Martins, Joaquim RRA and Cesnik, Carlos ES},
+  journal={AIAA Journal},
+  volume={61},
+  number={7},
+  pages={3045--3061},
+  year={2023},
+  publisher={American Institute of Aeronautics and Astronautics},
+  abstract={Lightweight high-aspect-ratio wings make aircraft more energy efficient thanks to their lower induced drag. Because such wings exhibit large deflections, design optimization based on linear flutter analysis of the wing undeformed shape is inadequate. To address this issue, we develop a framework for integrating a geometrically nonlinear flutter constraint, which considers in-flight deflections, into a high-fidelity gradient-based structural optimization. The wing mass and stress constraints are evaluated on a linear built-up (detailed) finite element model to capture realistic structural features. The geometrically nonlinear flutter constraint is based on a condensed low-order beam representation of the built-up finite element model, which captures the impact of in-flight deflections with tractable computational effort for optimization. The flutter constraint is differentiated with respect to the detailed structural model sizing variables using the adjoint method to enable large-scale optimizations. The framework is demonstrated by minimizing the mass of a wingbox model subject to the geometrically nonlinear flutter constraint along with stress and adjacency constraints. The geometrically nonlinear flutter constraint adds a penalty of up to 60\% of the baseline mass due to the impact of in-flight deflections on the flutter onset speed and its mechanism. In contrast, a linear flutter constraint evaluated on the undeformed wing adds a mass penalty of only 10\%. This methodology can help design energy-efficient aircraft with high-aspect-ratio wings, which require geometrically nonlinear flutter analyses early in the design cycle.
+Previous article},
+}
+
 
 @inproceedings{BahiaMonteiro2023,
     abbr={SciTech},
