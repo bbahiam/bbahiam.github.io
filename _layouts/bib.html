@@ -125,6 +125,9 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
+        {% if entry.doi %}
+        doi:<a href="http://dx.doi.org/{{entry.doi}}">{{entry.doi}}</a>
+        {% endif %}
         
           <!-- Links/Buttons -->
           <div class="links">
