@@ -1,5 +1,29 @@
 ---
 ---
+@PhdThesis{BahiaMonteiro2024_phd,
+  abbr={PhD},
+  bibtex_show={true},
+  pdf={Bahia_Monteiro_PhD_Dissertation.pdf},
+  selected=True,
+  author   = {Bahia Monteiro, Bernardo},
+  school   = {University of Michigan},
+  title    = {Control Related Metrics for Multidisciplinary Design Optimization},
+  year     = {2024},
+  abstract = {The push for cleaner aviation to meet the net-zero carbon emissions by 2050 goal will require introducing innovative technologies in future aircraft.
+Active control is a key enabler of these technologies. For example, actively reducing gust and maneuver loads allows the design of lighter and higher-aspect-ratio wings that reduce fuel burn.
+
+Traditionally, airframe and controller design are done sequentially. However, due to the couplings between these disciplines, this approach cannot guarantee that the final design is optimal on a system level.
+Multidisciplinary design optimization (MDO) offers a solution by simultaneously considering all disciplines and their cross-couplings. However, doing a detailed controller design early in the design cycle may still be undesirable due to the additional complexity brought into the MDO process, the fact that many state-of-the-art control design techniques are not suitable for inclusion in gradient-based optimization, and the presence of uncertainties about the final control architecture. Thus, approaches that introduce meaningful control-related constraints for airframe design without controller co-design are of interest.
+
+This work develops a method to estimate the performance of the closed-loop system, without controller design, based on parameterizing and designing the sensitivity transfer function of the closed-loop system. This approach efficiently approximates the best achievable closed-loop performance under stochastic disturbances, quantified by a class of risk metrics based on the power spectral density of signals in the system. It also enforces a technological limit on the bandwidth of the closed-loop system via a constraint on the Bode sensitivity integral relation. Analytical formulas for the derivatives of these metrics are derived in direct and adjoint modes and verified against finite difference approximations. These formulas allow fast and accurate derivative calculation, enabling the inclusion of the proposed metrics in gradient-based optimization problems.
+
+This approach is demonstrated in the MDO design of the wingbox of an aircraft with a gust load alleviation (GLA) system including a fatigue constraint, and in the analysis of the glideslope tracking performance of a supersonic configuration aircraft on the approach to land phase of flight, considering constraints on the risk of glideslope deviation, stall, and saturation of the elevator.
+
+The inclusion of maneuver load alleviation (MLA) in the design is considered through a strategy that is minimally intrusive to a pre-existing MDO problem. This strategy relies on a nested (bi-level) optimization approach and includes a model order reduction process to improve computational performance. It is demonstrated in the aerostructural design of a cantilevered wing, which includes a flutter constraint.
+
+The implementation of these methods in aeroelastic and MDO software is discussed, emphasizing the efficient use of algorithmic differentiation (AD). This enables the definition of new metrics without direct interaction with the AD tool, saving programming effort.},
+}
+
 @inproceedings{BahiaMonteiro2024,
   abbr={SciTech},
   bibtex_show={true},
@@ -10,6 +34,7 @@
   month = jan,
   title = {Controller Agnostic Design Metrics for Stochastic Disturbance Rejection},
   year = {2024},
+  doi={https://doi.org/10.2514/6.2024-0901},
   abstract = {This paper presents a framework to compute the probabilities and
               the expected frequencies of exceedance of design limits by the
               outputs and inputs of a linear system driven by Gaussian noise.
